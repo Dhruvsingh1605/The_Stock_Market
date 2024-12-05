@@ -1,0 +1,17 @@
+Code Explanation:
+
+Import Libraries: yfinance for fetching stock data, pandas for data manipulation, os for file system checks.
+
+File Check: The code checks if the Stocks.csv file exists. If not, an error is shown.
+
+Read CSV: The file is read into a pandas DataFrame, and .NS is appended to tickers for NSE compatibility.
+
+User Input: The user is prompted to input the data period (e.g., 1mo, 1y) and the total investment amount.
+
+Fetch Data: For each stock ticker, the code fetches historical data from Yahoo Finance. Investment calculations are done for each stock based on the weightage.
+
+Save to Excel: The stock data is saved to an Excel file ADANIPORTS_data.xlsx.
+
+Output: The first few rows of the fetched data are displayed, and a success message is shown.
+
+Failed Tickers (Commented): Code for tracking failed tickers is included but not active.
